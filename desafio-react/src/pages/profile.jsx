@@ -1,10 +1,21 @@
-import { useParams } from 'react-router-dom'
+import { useEffect, useState } from "react";
+import { useParams, useHistory } from 'react-router-dom'
+import { fetchGithubProfileData } from "../util/github-api";
+import { UserInfo } from '../components/UserInfo'
 
-export function Profile () {
-
-    const { username } = useParams()
+export function Profile (props) {
+    const [user, setUser] = useState({});
+    //const history = useHistory();
+  
+    useEffect(() => {
+      fetchGithubProfileData(props.match.params.username).then((user) => {
+        setUser(user);
+      });
+    }, [props.match.params.username]);
 
     return (
-        <div>{username}</div>
+        <>
+            <UserInfo user={user}></UserInfo>
+        </>
     )
 }

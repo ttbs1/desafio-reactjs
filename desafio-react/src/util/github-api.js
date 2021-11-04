@@ -8,14 +8,14 @@ export async function fetchGithubProfileData(username) {
     const repos = await axios.get(user.data.repos_url);
 
     return {
+      avatar: user.data.avatar_url,
       name: user.data.name,
-      bio: user.data.bio,
-      photo: user.data.avatar_url,
       username: user.data.login,
-      location: user.data.location,
+      bio: user.data.bio,
       followers: user.data.followers,
       following: user.data.following,
       organization: user.data.company,
+      location: user.data.location,
       email: user.data.email,
       blog: user.data.blog,
       twitter: user.data.twitter_username,
