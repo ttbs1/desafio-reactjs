@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useHistory } from 'react-router-dom'
+//import { useParams, useHistory } from 'react-router-dom'
 import { fetchGithubProfileData } from "../util/github-api";
 import { UserInfo } from '../components/UserInfo'
 

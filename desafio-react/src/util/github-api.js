@@ -14,7 +14,7 @@ export async function fetchGithubProfileData(username) {
       bio: user.data.bio,
       followers: user.data.followers,
       following: user.data.following,
-      organization: user.data.company,
+      company: user.data.company,
       location: user.data.location,
       email: user.data.email,
       blog: user.data.blog,

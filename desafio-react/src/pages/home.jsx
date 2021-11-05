@@ -27,8 +27,8 @@ export function Home() {
                 
                 <label class="form-label fs-2">Search Devs</label>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Type the username here..." value={username} onChange={(e) => setUsername(e.target.value)} />
-                    <button type="submit" className="btn btn-secondary"><i class="fas fa-search"></i> Buscar</button>
+                    <input type="text" className="form-control" placeholder="Type the username here..." value={username} onChange={(e) => setUsername(e.target.value)} />
+                    <button type="submit" className="btn btn-secondary"><i className="fas fa-search"></i> Buscar</button>
                 </div>
             </form>
         </div>
