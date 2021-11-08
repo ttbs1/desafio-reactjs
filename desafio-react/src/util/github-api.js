@@ -21,6 +21,7 @@ export async function fetchGithubProfileData(username) {
       twitter: user.data.twitter_username,
       repos: repos.data.map((repo) => {
         return {
+          id: repo.id,
           name: repo.name,
           description: repo.description,
           stars: repo.stargazers_count,

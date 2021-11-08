@@ -25,8 +25,8 @@ export function Home() {
         <div className="container-fluid d-flex justify-content-center align-items-center vh-100 fst-italic" style={{backgroundColor: '#f2f2f2' }}>
             <form className="col-sm-6 text-center" onSubmit={searchUser}>
                 
-                <label class="form-label fs-2">Search Devs</label>
-                <div class="input-group mb-3">
+                <label className="form-label fs-2">Search Devs</label>
+                <div className="input-group mb-3">
                     <input type="text" className="form-control" placeholder="Type the username here..." value={username} onChange={(e) => setUsername(e.target.value)} />
                     <button type="submit" className="btn btn-secondary"><i className="fas fa-search"></i> Buscar</button>
                 </div>
