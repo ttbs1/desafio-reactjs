@@ -1,0 +1,18 @@
+.repository {
+    margin: 15px 15px 0 15px;
+    border-bottom: 1px solid #ECEFF4;
+    font-style: italic;
+}
+
+.repos-name {
+    text-decoration: none;
+    color: #3B4252;
+}
+
+.repos-name:hover {
+    color: #3B4252;
+}
+
+.stars {
+    color: #8190A5;
+}

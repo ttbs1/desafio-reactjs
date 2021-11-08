@@ -21,11 +21,11 @@ export async function fetchGithubProfileData(username) {
       twitter: user.data.twitter_username,
       repos: repos.data.map((repo) => {
         return {
-          url: repo.html_url,
-          lastUpdate: repo.updated_at,
-          stars: repo.stargazers_count,
           name: repo.name,
           description: repo.description,
+          stars: repo.stargazers_count,
+          lastUpdate: repo.updated_at,
+          url: repo.html_url,
         };
       }),
     };
