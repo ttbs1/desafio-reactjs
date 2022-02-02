@@ -1,3 +1,13 @@
+# Mozão challenge
+
+this is my frontend challenge from Diogo Fonseca to test and practice my react.js skills using github API
+
+## How to run it locally
+
+In the project directory, using npm, you can run
+`npm start` and open [http://localhost:3000](http://localhost:3000) 
+to view it in your browser.
+
 ## EDIT: 12/09/2021
 Projeto aposentado. Não estou mais fazendo mentorias e feedbacks deste desafio. Caso vc queira seguir com este projeto em frente, fique à vontade para fazer um fork, porém lembre-se que ele deve ser Gratuito e Open Source para toda a comunidade. 
 
